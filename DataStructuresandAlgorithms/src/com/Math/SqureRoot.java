@@ -3,34 +3,35 @@ package com.Math;
 public class SqureRoot {
 
 	public static void main(String[] args) {
-		System.out.println(sqrt(5));
+		System.out.println(sqrt(145));
 	}
-	public static float sqrt(int n) {
-		int start = 2;
+//	time complexity 
+	public static double sqrt(int n) {
+		int s = 1;
 		int end = n;
-		float mid = 0.0f;
-		if(n == 1) {
-			return 1.0f;
-		}else if( n < 1) {
-			return 0	;
-		}else {
-			while(start <= end) {
-				mid = start + (end - start)/2;
-				if(mid * mid == n) {
-					return mid;
-				}else if(mid * mid > n){
-					end  = (int)mid - 1;
-				}else {
-					start = (int)mid + 1;
-				}
-			}
+		int mid = 0;
+		if (n == 1) {
+			return 1;
 		}
-		float increment = 0.1f;
-		for(int i = 0; i < 3; i++) {
-			while(mid * mid <= n) {
-				mid += increment;
+		while (s <= end) {//from here to 
+			mid = s + (end - s) / 2;
+			if(mid * mid == n ) {
+				return mid;
+			}else if(mid * mid > n) {
+				end = mid - 1;
+			}else {
+				s = mid + 1;
 			}
+		}//					here log(n)
+		double inc = 0.1;//
+		double root = mid;
+		for(int i = 1; i < 4; i++) {
+			while(root * root < n) {
+				root += inc;
+			}
+			root -= inc;
+			inc /= 10;
 		}
-		return mid;
+		return root;// here log(n) + 4 ==> log(n) && space complexity is O( 1 + 1 + 1 + 1 + 1) ==> O(1);
 	}
 }
