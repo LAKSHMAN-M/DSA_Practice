@@ -5,7 +5,7 @@ import java.util.Vector;
 public class Factors {
 
 	public static void main(String[] args) {
-		factorsOptimizedWay(13);
+		factorsOptimizedWay(16);
 	}
 
 //	time complexity : O(n), space complexity : O(1)
@@ -37,8 +37,8 @@ public class Factors {
 				v.add(n / i);
 			}
 		}
-		for (int i = v.size() - 1; i >= 0; i--) {
-			System.out.print(v.get(i)+" ");
+		for (int i = v.size() - 2; i >= 0; i--) {
+			System.out.print(v.get(i) + " ");
 		}
 	}
 }

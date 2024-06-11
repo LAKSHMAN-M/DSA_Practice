@@ -2,8 +2,8 @@ package com.binarySearch.problems;
 
 public class SearchInRotatedSortedArray {
 	public static void main(String[] args) {
-		int nums[] = { 3, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 1, 2 };
-		System.out.println(search(nums, 5));
+		int nums[] = { 3 ,4 ,5 ,6 ,9 ,2 };
+		System.out.println(search(nums, 4));
 	}
 
 //	it will return the target element if not found will return -1

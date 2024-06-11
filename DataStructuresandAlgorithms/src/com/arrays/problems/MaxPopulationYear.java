@@ -1,5 +1,5 @@
 package com.arrays.problems;
-import java.util.Arrays;
+
 //	https://leetcode.com/problems/maximum-population-year/description/
  class  Solution {
     public int earliestMaxPopulation(int[][] logs) {
@@ -28,12 +28,12 @@ import java.util.Arrays;
 
 public class MaxPopulationYear {
     public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        int[][] logs1 = {{1993, 1999}, {2000, 2010}};
-        System.out.println("Example 1: " + solution.earliestMaxPopulation(logs1));  // Output: 1993
-
-        int[][] logs2 = {{1950, 1961}, {1960, 1971}, {1970, 1981}};
-        System.out.println("Example 2: " + solution.earliestMaxPopulation(logs2));  // Output: 1960
+////        Solution10 solution = new Solution10();
+//
+//        int[][] logs1 = {{1993, 1999}, {2000, 2010}};
+//        System.out.println("Example 1: " + solution.earliestMaxPopulation(logs1));  // Output: 1993
+//
+//        int[][] logs2 = {{1950, 1961}, {1960, 1971}, {1970, 1981}};
+//        System.out.println("Example 2: " + solution.earliestMaxPopulation(logs2));  // Output: 1960
     }
 }

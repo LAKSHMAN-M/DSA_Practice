@@ -1,4 +1,7 @@
 package com.arrays.problems;
+
+import java.util.Arrays;
+
 //	https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/
 //Input: n = 5 5/2 == 2
 //Output: [-7,-1,1,3,4]
@@ -21,7 +24,7 @@ class Solution_1304 {
 }
 public class FindNUniqueIntegersSumUpto0{
 	public static void main(String[] args) {
-		Solution_1304.sumZero(5);
-		
+
+		System.out.println(Arrays.toString(Solution_1304.sumZero(5)));
 	}
 }
